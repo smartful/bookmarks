@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=https://www.smartful.fr/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Bookmark app</title>
+</head>
+<body>
+    <!-- Modal -->
+    <h1 id="show-modal">Add Bookmark</h1>
+
+    <!-- Bookmarks -->
+    <div class="container" id="bookmarks-container"></div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fas fa-times close-icon" id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add bookmark</h3>
+            </div>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website name</label>
+                        <input type="text" id="website-name" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="website-url" class="form-label">Website url</label>
+                        <input type="text" id="website-url" class="form-input">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
